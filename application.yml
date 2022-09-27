@@ -1,3 +1,4 @@
+message: Hi i am message from github repositry
 eureka:
   client:
     register-with-eureka: true
@@ -13,4 +14,4 @@ spring:
     base-url: http://127.0.0.1:9411/
 
 
-message: Hi i am message from github repositry
+
