@@ -20,14 +20,14 @@ spring:
                 fallbackuri: forward:/userServiceFallBack
 
 
-        - id: department-service
+        - id: department_service
           uri: lb://department-service
           predicates:
             - Path=/departments/**
           filters:
             - name: CircuitBreaker
               args:
-                name: department-service
+                name: department_service
                 fallbackuri: forward:/departmentServiceFallBack
 
 
